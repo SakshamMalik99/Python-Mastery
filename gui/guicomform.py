@@ -1,0 +1,22 @@
+from tkinter import *
+from tkinter import messagebox
+win=Tk()
+win.geometry("300x300")
+name=Label(win,text="Neme",fg="red")
+phno=Label(win,text="Ph.No.",fg="red")
+email=Label(win,text="email ID",fg="red")
+eN=Entry(win)
+eP=Entry(win)
+eE=Entry(win)
+def clicked():
+    res = "Welcome to " +eN.get()+", "+eP.get()+", "+eE.get()
+    messagebox.showinfo('Message title', res)
+check=Button(win,text="Keep me logged in.",command=clicked)
+name.grid(row=0)
+phno.grid(row=1)
+email.grid(row=2)
+eN.grid(row=0,column=1)
+eP.grid(row=1,column=1)
+eE.grid(row=2,column=1)
+check.grid(row=3,column=1)
+win.mainloop()
