@@ -1,0 +1,10 @@
+import datetime
+tdate=datetime.date.today()
+print("DATE: ",tdate)
+print("DAY: ",tdate.day)
+print("MONTH: ",tdate.month)
+print("YEAR: ",tdate.year)
+tdate=datetime.datetime.now()
+print("H: ",tdate.hour)
+print("M: ",tdate.minute)
+print("s: ",tdate.second)

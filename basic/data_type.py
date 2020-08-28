@@ -1,0 +1,12 @@
+a=5
+a1=12.34
+b="Raman"
+c=(1,2,3)
+d=[12,"Amit",2340]
+e={"Roll":12,"Name":"Sumit","Fee":2340}
+print(type(a))
+print(type(a1))    
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
